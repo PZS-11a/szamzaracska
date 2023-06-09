@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Számológép</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 class="h1">Számzár</h1>
+    <div class="calculator">
+      <input id="codeInput" type="number" min="0" max="9999" readonly />
+      <button onclick="appendNumber(1)">1</button>
+      <button onclick="appendNumber(2)">2</button>
+      <button onclick="appendNumber(3)">3</button>
+      <button onclick="appendNumber(4)">4</button>
+      <button onclick="appendNumber(5)">5</button>
+      <button onclick="appendNumber(6)">6</button>
+      <button onclick="appendNumber(7)">7</button>
+      <button onclick="appendNumber(8)">8</button>
+      <button onclick="appendNumber(9)">9</button>
+      <button onclick="appendNumber(0)">0</button>
+      <button onclick="clearInput()">Törlés</button>
+      <button onclick="submitCode()">Küldés</button>
+    </div>
+
+    <p class="message" id="message"></p>
+  </body>
+</html>
